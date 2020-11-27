@@ -1,0 +1,117 @@
+ul {
+    list-style-type: none;
+}
+
+img {
+    margin-left: 20px;
+    margin-top: 15px;
+    width: 80px;
+
+}
+
+input {
+    display: none;
+}
+
+.menu {
+    position: relative;
+    top: 35px;
+    left: 240px;
+    display: inline-block;
+    background-color: #6E6E6E;
+    width: 700px;
+    height: 115px;
+    transition: 0.5s;
+}
+
+.menu_icon {
+    position: fixed;
+    top: 95px;
+    left: 875px;
+    width: 45px;
+    height: 5px;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.menu_icon::before {
+    position: absolute;
+    left: 0;
+    top: -15px;
+    content: "";
+    display: block;
+    width: 45px;
+    height: 5px;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.menu_icon::after {
+    position: absolute;
+    left: 0;
+    top: 15px;
+    content: "";
+    display: block;
+    width: 45px;
+    height: 5px;
+    background-color: white;
+    transition: 0.5s;
+}
+
+input:checked + label .menu_icon {
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+input:checked + label .menu_icon::before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: 0.5s;
+}
+
+input:checked + label .menu_icon::after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: 0.5s;
+}
+
+.some {
+    color: #6E6E6E;
+    opacity: 0;
+    height: 0;
+    text-align: center;
+    width: 700px;
+    padding: 40px 0;
+    visibility: hidden;
+    position: fixed;
+    transition: 0.5s;
+}
+
+.some li {
+    margin-left: 300px;
+}
+
+a {
+    display: block;
+    padding-bottom: 20px;
+    color: white;
+    font-family: 'Arial';
+    font-size: 35px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+input:checked + label ~ .some {
+    visibility: visible;
+    opacity: 1;
+    color: white;
+    position: static;
+    display: block;
+    height: 300px;
+    background-color: #6E6E6E;
+    transition: 0.5s;
+}

@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    width: 960px;
+    height: 960px;
+    outline: 2px dashed gray;
+    margin: 60px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+div {
+    height: 240px;
+    width: 240px;
+}
+
+div:nth-child(1) {
+    background: url("images/1_06.png");
+    transform: rotate(90deg) translate(240px, -240px);
+    transition: 3s;
+}
+
+div:nth-child(2) {
+    transform: translate( 0px, 480px) rotate(180deg );
+    background: url("images/1_10.png");
+    transition: 3s;
+}
+
+div:nth-child(3) {
+    transform: rotate(-90deg);
+    background: url("images/1_03.png");
+    transition: 3s;
+}
+
+div:nth-child(4) {
+    background: url("images/1_05.png");
+    transform: translate(-720px, 240px)rotate(180deg);
+    transition: 3s;
+}
+
+div:nth-child(5) {
+    transform: translate(0px, 480px) rotate(-90deg);
+    background: url("images/1_13.png");
+    transition: 3s;
+}
+
+div:nth-child(6) {
+    background: url("images/1_01.png");
+    transform: translate(480px, -240px) rotate(90deg);
+    transition: 3s;
+}
+
+div:nth-child(7) {
+    background: url("images/1_09.png");
+    transform: translate(-480px, 240px);
+    transition: 3s;
+}
+
+div:nth-child(8) {
+    background: url("images/1_08.png");
+    transform: rotate(90deg);
+    transition: 3s;
+}
+
+div:nth-child(9) {
+    transform: rotate(90deg) translate(-480px, 0px);
+    background: url("images/1_04.png");
+    transition: 3s;
+}
+
+div:nth-child(10) {
+    transform: translate(0px, -480px) rotate(90deg);
+    background: url("images/1_02.png");
+    transition: 3s;
+}
+
+div:nth-child(11) {
+    transform: rotate(90deg);
+    background: url("images/1_11.png");
+    transition: 3s;
+}
+
+div:nth-child(12) {
+    transform: translate(0px, 240px) rotate(90deg);
+    background: url("images/1_16.png");
+    transition: 3s;
+}
+
+div:nth-child(13) {
+    transform: translate(480px, 0px);
+    background: url("images/1_15.png");
+    transition: 3s;
+}
+
+div:nth-child(14) {
+    transform: rotate(180deg);
+    background: url("images/1_14.png");
+    transition: 3s;
+}
+
+div:nth-child(15) {
+    transform: translate(240px, -240px) rotate(270deg);
+    background: url("images/1_12.png");
+    transition: 3s;
+}
+
+div:nth-child(16) {
+    background: url("images/1_07.png");
+    transform: rotate(180deg) translate(240px, 480px);
+    transition: 3s;
+}
